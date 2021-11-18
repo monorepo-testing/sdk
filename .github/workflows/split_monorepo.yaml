@@ -49,7 +49,7 @@ jobs:
             -   id: repo-names
                 run: |
                     composer require illuminate/support --ignore-platform-reqs
-                    php -r 'require("./vendor/autoload.php"); echo "::set-output name=pascal::" . ucfirst(\Illuminate\Support\Str::camel("$REPO_NAME"));'
+                    php -r "require(\"./vendor/autoload.php\"); echo \"::set-output name=pascal::\" . ucfirst(\Illuminate\Support\Str::camel(\""$REPO_NAME"\"));"
                 env:
                     REPO_NAME: ${{ matrix.package }}
             # no tag
