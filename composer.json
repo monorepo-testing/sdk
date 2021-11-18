@@ -1,7 +1,8 @@
 {
     "name": "netflex/sdk",
     "require": {
-        "php": "^7.4"
+        "php": "^7.4",
+        "illuminate/support": "^8.72"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5",

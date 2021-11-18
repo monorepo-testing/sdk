@@ -17,7 +17,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     $parameters = $containerConfigurator->parameters();
 
     $parameters->set(Option::PACKAGE_DIRECTORIES, [
-        __DIR__ . '/src',
+        __DIR__ . '/src/Netflex',
     ]);
 
     $services = $containerConfigurator->services();
