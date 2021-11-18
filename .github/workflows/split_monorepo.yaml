@@ -62,8 +62,8 @@ jobs:
                     GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
                 with:
                     package_directory: 'src/Netflex/${{ steps.repo-names.outputs.pascal }}'
-                    split_repository_organization: 'monorepo-testing'
-                    split_repository_name: '${{ matrix.package }}'
+                    repository_organization: 'monorepo-testing'
+                    repository_name: '${{ matrix.package }}'
                     user_name: "GitHub Action"
                     user_email: "action@github.com"
                     branch: "master"
@@ -80,8 +80,8 @@ jobs:
                     tag: ${GITHUB_REF#refs/tags/}
 
                     package_directory: 'src/Netflex/${{ steps.repo-names.outputs.pascal }}'
-                    split_repository_organization: 'monorepo-testing'
-                    split_repository_name: '${{ matrix.package }}'
+                    repository_organization: 'monorepo-testing'
+                    repository_name: '${{ matrix.package }}'
                     user_name: "GitHub Action"
                     user_email: "action@github.com"
                     branch: "master"
