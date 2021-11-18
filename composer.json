@@ -16,7 +16,7 @@
         }
     },
     "replace": {
-        "netflex/contracts": "self.version",
-        "netflex/test": "self.version"
+        "netflex/contracts": "70.69.0",
+        "netflex/test": "70.69.0"
     }
 }
